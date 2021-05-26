@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+<a class="btn" onclick="popupToggle();">Abone Ol</a>
+<div id="popup">
+    <div class="content">
+        <img src="img/email.png" alt="">
+        <h2>Abone Ol</h2>
+        <p>Sitemizde yayınlanan en son yeniliklerden haberdar olmak
+            için abone ola bilirsiniz.
+        </p>
+        <div class="inputBox">
+            <input type="email" placeholder="E-Mail Adresiniz">
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Abone Ol" class="btn">
+        </div>
+        <a onclick="popupToggle();" class="close"><img src="img/close.png" alt="" class="exit"></a>
+    </div>
+   
+</div>
+    
+<script>
+    function popupToggle(){
+        const popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+</script> 
+</body>
+</html>
