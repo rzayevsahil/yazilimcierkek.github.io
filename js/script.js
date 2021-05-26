@@ -9,6 +9,7 @@ window.addEventListener("load",()=>{
         document.querySelector(".page-loader").style.display= "none";
     },600);
     $(function() {
+       $(function() {
         $('#WAButton').floatingWhatsApp({
           phone: '+994504702996', //WhatsApp Business phone number International format-
           //Get it with Toky at https://toky.co/en/features/whatsapp.
@@ -20,8 +21,7 @@ window.addEventListener("load",()=>{
           //backgroundColor: 'crimson', //Custom background button color
           position: "right"    
         });
-      });	
-    
+      });
 });
 
 //*navbar*/
