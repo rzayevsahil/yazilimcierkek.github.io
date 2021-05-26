@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <section>
+    <div class="container">
+        <div class="user signinBox">
+            <div class="imgBox"><img src="img/1.jpg" alt=""></div>
+            <div class="formBox">
+                <form>
+                    <h2>Giriş Yap</h2>
+                    <input type="text" placeholder="Kullanıcı Adı">
+                    <input type="password" placeholder="Şifre">
+                    <input type="submit" value="Giriş">
+        <p class="signup">Hesabınız yokmu? Hemen <a href="#" onclick="toggleForm();">Kayıt Olun</a></p>
+                </form>
+            </div>
+        </div> 
+        <div class="user signupBox">
+            <div class="formBox">
+                <form>
+                    <h2>Üyelik Oluştur</h2>
+                    <input type="text" placeholder="Kullanıcı Adınız">
+                    <input type="text" placeholder="E-mail Adresiniz">
+                    <input type="password" placeholder="Şifre Oluşturunuz">
+                    <input type="password" placeholder="Şifre Oluşturunuz(tekrar)">
+                    <input type="submit" value="Kayıt Ol">
+                    <p class="signup">Giriş ekranına <a href="#" onclick="toggleForm();">geri dön</a></p>
+                </form>
+            </div>
+            <div class="imgBox"><img src="img/2.jpg" alt=""></div>
+        </div> 
+    </div>
+   </section>
+
+
+<script>
+
+
+    function toggleForm(){
+    section = document.querySelector('section');
+    container = document.querySelector('.container');
+    container.classList.toggle('active');
+    section.classList.toggle('active');
+    }
+
+    
+</script> 
+</body>
+</html>
