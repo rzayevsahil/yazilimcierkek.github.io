@@ -8,8 +8,7 @@ window.addEventListener("load",()=>{
     setTimeout(()=>{
         document.querySelector(".page-loader").style.display= "none";
     },600);
-    $(function() {
-       $(function() {
+   $(function() {
         $('#WAButton').floatingWhatsApp({
           phone: '+994504702996', //WhatsApp Business phone number International format-
           //Get it with Toky at https://toky.co/en/features/whatsapp.
