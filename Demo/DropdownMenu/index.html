@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="action">
+        <div class="profil" onclick="menuToggle();">
+            <img src="img/yourphoto.jpg" alt="">
+        </div>
+        <div class="menu">
+            <h3>Adiniz Soyadiniz<br><span>Pozisiyonunuz</span></h3>
+            <ul>
+                <li><img src="img/profil.png" alt=""><a href="#">Hesabım</a></li>
+                <li><img src="img/edit.png" alt=""><a href="#">Düzenle</a></li>
+                <li><img src="img/inbox.png" alt=""><a href="#">Mesajlarım</a></li>
+                <li><img src="img/settings.png" alt=""><a href="#">Ayarlar</a></li>
+                <li><img src="img/help.png" alt=""><a href="#">Yardım</a></li>
+                <li><img src="img/logout.png" alt=""><a href="#">Çıkış Yap</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+
+    function menuToggle(){
+        const toggleMenu=document.querySelector('.menu');
+        toggleMenu.classList.toggle('active');
+         }
+         
+    </script>  
+
+
+</body>
+</html>
