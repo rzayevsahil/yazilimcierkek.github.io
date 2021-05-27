@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="swiper.js"></script>
+</head>
+<body>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="textbox">
+                      <img src="img/quote.ico" class="quote" alt="no photo">
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                              Officiis porro, atque numquam ullam consequatur similique consequuntur omnis. 
+                              Itaque, ipsa dignissimos.</p>
+                              <div class="detalis">
+                                <div class="imbBx">
+                                    <img src="img/ema.jpg" alt="no photo">
+                                </div>
+                                <h3>Linda Mark<br><span>Front-End Developer</span></h3>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="textbox">
+                    <img src="img/quote.ico" class="quote" alt="no photo">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Officiis porro, atque numquam ullam consequatur similique consequuntur omnis. 
+                            Itaque, ipsa dignissimos.</p>
+                            <div class="detalis">
+                              <div class="imbBx">
+                                  <img src="img/albert.jpg" alt="no photo">
+                              </div>
+                              <h3>George Brian<br><span>Back-End Developer</span></h3>
+                          </div>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide">
+                <div class="textbox">
+                    <img src="img/quote.ico" class="quote" alt="no photo">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Officiis porro, atque numquam ullam consequatur similique consequuntur omnis. 
+                            Itaque, ipsa dignissimos.</p>
+                            <div class="detalis">
+                              <div class="imbBx">
+                                  <img src="img/lety.jpg" alt="no photo">
+                              </div>
+                              <h3>Elizabeth Kevin <br><span>Creative Designer</span></h3>
+                          </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    loop:true,
+  });
+    </script>
+</body>
+</html>
