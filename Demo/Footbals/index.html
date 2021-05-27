@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo2.ico">
+</head>
+<body>
+<section>
+    <header>
+        <a href="#" class="logo">Futbolcular</a>
+        <div class="toogle"></div>
+    </header>
+    <div class="container">
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/messi.jpg" alt="no photo">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/xavi.jpg" alt="no photo">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/hazard.jpg" alt="no photo">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="img/ronaldo.jpg" alt="no photo">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="sci">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+        </ul>
+        <p class="copyrightText">Designed by Javidation</p>
+    </div>
+</section>
+<script type="text/javascript">
+    const imgbox=document.querySelectorAll('.imgbox');
+    imgbox.forEach(popup => popup.addEventListener('click',()=>{
+        popup.classList.toggle('active')
+    }))
+</script>
+</body>
+</html>
