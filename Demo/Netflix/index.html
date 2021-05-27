@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/home.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+   <header>
+       <a href="#" class="logo"><img src="img/logo.png" alt="no photo"></a>
+       <ul class="navigation">
+           <li><a href="#">Ana Sayfa</a></li>
+           <li><a href="#">Tv Şovları</a></li>
+           <li><a href="#">Filmler</a></li>
+           <li><a href="#">Diziler</a></li>
+           <li><a href="#">Benim Listem</a></li>
+       </ul>
+       <div class="search">
+           <input type="text" placeholder="Ara">
+           <i class="fa fa-search" aria-hidden="true"></i>
+       </div>
+   </header>
+   <div class="banner">
+       <img class="bg"  src="img/bg.jpg" alt="no phto">
+       <div class="content">
+           <img src="img/name.png" class="movieTitle" alt="">
+           <h4>
+               <span>2021</span>
+               <span><i>12+</i></span>
+               <span>1s 55 dakika</span>
+               <span>Aksiyon</span>
+           </h4>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Cum deleniti nam id magni officiis exercitationem dolorem quidem distinctio! 
+               Magnam, provident quia quasi dolorum quas facere.</p>
+               <div class="buttons">
+                   <a href="#"><i class="fa fa-play" aria-hidden="true"></i>  İzle</a>
+                   <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>  Benim Listem</a>
+               </div>
+       </div>
+       <a class="play" onclick="toggleVideo()"><img src="img/play.png" alt=""> Fragman İzle</a>
+   </div>
+   <div class="fragman">
+       <video src="video/mulan.mp4" controls="true" muted=""></video>
+       <img src="img/close.png" class="close" alt="no photo" onclick="toggleVideo()">
+   </div>
+
+
+
+   <script>
+       function toggleVideo(){
+           const fragman =document.querySelector('.fragman');
+           const video=document.querySelector('video');
+           fragman.classList.toggle('active');
+           video.currentTime=0;
+           video.pause();
+       }
+   </script>
+</body>
+</html>
