@@ -7,7 +7,7 @@ window.addEventListener("load",()=>{
     document.querySelector(".page-loader").classList.add("fade-out");
     setTimeout(()=>{
         document.querySelector(".page-loader").style.display= "none";
-    },100);
+    },900);
    $(function() {
         $('#WAButton').floatingWhatsApp({
           phone: '+994504702996', //WhatsApp Business phone number International format-
