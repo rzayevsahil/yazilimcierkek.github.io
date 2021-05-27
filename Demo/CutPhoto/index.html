@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo2.ico">
+</head>
+<body>
+   
+    <section>
+        <div class="side" id="side1"></div>
+        <div class="side" id="side2"></div>
+    </section>
+<script type="text/javascript">
+    var side1=document.getElementById('side1')
+    window.addEventListener('scroll',function(){
+        side1.style.left = - +window.pageYOffset+'px';
+    });
+    var side2=document.getElementById('side2')
+    window.addEventListener('scroll',function(){
+        side2.style.left = +window.pageYOffset+'px';
+    });
+
+
+</script>
+</body>
+</html>
