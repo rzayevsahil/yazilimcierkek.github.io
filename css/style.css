@@ -6,7 +6,7 @@
     --red-color:#ec0808;
     --red-color-2:#f79b9b;
     --blue:#0000ff;
-    --blue-dark:#18293c;
+    --blue-dark:#0a0e13;
     --orange:#ffa500;
     --green-yellow:#cddc39;
     --pink-light:#efa2b4;
@@ -29,7 +29,7 @@
 }
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right,var(--pink-light),var(--cyan-light));
+    background-image: linear-gradient(to bottom right,var(--blue-dark),var(--cyan-light));
     background-attachment: fixed;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -146,7 +146,7 @@ section.fade-out{
     background-color: var(--white);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--main-color);
+    background-color: var(--red-color);
 }
 /* BUTTONS SETTINGS*/
 button{
@@ -160,7 +160,7 @@ button{
     padding: 10px 28px;
     display: inline-block;
     border-radius: 30px;
-    color: var(--main-color);
+    color: var(--blue-dark);
     font-weight: 500;
     text-transform: capitalize;
     font-family: inherit;
@@ -261,7 +261,7 @@ button{
 .bg-circles .circle-2{
     width: 80px;
     height: 80px;
-    background-color: var(--main-color);
+    background-color: var(--red-color);
     left: 30%;
     top: 50%;
     opacity: .4;
@@ -327,7 +327,7 @@ button{
 .page-loader div:nth-child(1){
     height: 60px;
     width: 60px;
-    border-color: var(--main-color);
+    border-color: var(--red-color);
 }
 .page-loader div:nth-child(2){
     height: 45px;
@@ -381,7 +381,7 @@ button{
 .header .nav-toggler span{
     height: 2px;
     width: 24px;
-    background-color: var(--main-color);
+    background-color: var(--red-color);
     position: relative;
     transition: background-color 0.3s ease;
 }
@@ -395,7 +395,7 @@ button{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: var(--red-color);
     transition: all .3s ease;
 }
 .header .nav-toggler span::before{
@@ -475,7 +475,7 @@ button{
     width: 100%;
 }
 .header .nav-inner ul li a:hover{
-    color: var(--main-color);
+    color: var(--red-color);
 }
 /* HOME SETTINGS*/
 .home-section{
@@ -491,16 +491,19 @@ button{
 }
 .home-text p {
     font-size: 18px;
+   
 }
 .home-text h1 {
     font-size: 50px;
     text-transform: capitalize;
+    
 }
 .home-text h2 {
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 300;
     margin: 0 0 30px;
+    
 }
 .home-text .btn{
     margin: 0 15px 15px 0;
@@ -509,7 +512,7 @@ button{
     max-width: 360px;
     background-color: var(--white-alpha-25);
     border-radius: 50%;
-    border: 8px solid var(--red-color-2);
+    border: 8px solid var(--white-alpha-40);
     margin: auto;
     box-shadow: 2px 2px 2px 2px rgba(97, 94, 94, 0.25),
     -3px -3px 40px rgba(80, 79, 79,.40);
@@ -527,6 +530,11 @@ button{
     color: red;
     font-weight: 600;
 }
+.whatsappme--left {	
+    right: auto;	
+    left: 20px;
+}
+    
 
 /*about Section start-*/
 .about-img{
@@ -603,10 +611,10 @@ button{
 }
 .about-tabs .tab-item.active::before{
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--red-color);
 }
 .about-tabs .tab-item.active{
-    color: var(--main-color);
+    color: var(--red-color);
     opacity: 1;
     cursor: auto;
 }
@@ -620,7 +628,7 @@ button{
     width: 1px;
     top: 0;
     left: 5px;
-    background-color: var(--main-color);
+    background-color: var(--red-color);
 }
 .about-text .tab-content{
     padding: 40px 0;
@@ -639,7 +647,7 @@ button{
     position: absolute;
     height: 11px;
     width: 11px;
-    background-color: var(--main-color);
+    background-color: var(--red-color);
     left: 0;
     top: 16px;
     border-radius: 50%;
@@ -649,7 +657,7 @@ button{
 }
 .about-text .timeline-item .date{
     display: block;
-    color: var(--main-color);
+    color: var(--red-color);
     font-weight: 400;
     margin: 0 0 10px;
 }
@@ -699,7 +707,7 @@ button{
     opacity: .7;
 }
 .portfilo-filter-btn:hover{
-    background: var(--main-color);
+    background: var(--red-color);
     opacity: 1;
 }
 .portfilo-item-thumbnail{
@@ -838,7 +846,7 @@ input[type=text] {
 }
 .pp-body .general-info li a{
     text-transform: lowercase;
-    color: var(--main-color);
+    color: var(--red-color);
 }
 /*contact*/
 .contact-form,
@@ -895,7 +903,7 @@ input[type=text] {
     width: 40px;
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    color: var(--main-color);
+    color: var(--red-color);
     border-radius: 50%;
     transition: font-size .5s inherit;
     margin: 6px 4px 0 0;
@@ -903,7 +911,7 @@ input[type=text] {
 }
 .contact-info-item .social-links a:hover{
     color:var(--white);
-    background-color: var(--main-color);
+    background-color: var(--red-color);
 }
 .page {
     display: none;
