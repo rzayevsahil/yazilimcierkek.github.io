@@ -522,7 +522,7 @@ button{
     border-radius: 50%;
 }
 .youtube{
-    color: rgb(243, 62, 62);
+   color: rgb(12, 11, 11);
     font-weight: 400;
     transition: color .4s ease-in-out , font-weight .2s ease-in;
 }
